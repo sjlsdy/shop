@@ -1,0 +1,62 @@
+<view class="swiper__box">
+	<view class="swiper__tab">
+		<view class="swiper__tab__item {{currentTab==999?'active':''}}" data-current="999" bindtap="clickTab">全部{{page}}{{totalPages}}</view>
+		<view class="swiper__tab__item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">待付款</view>
+		<view class="swiper__tab__item {{currentTab==201?'active':''}}" data-current="201" bindtap="clickTab">待发货</view>
+		<view class="swiper__tab__item {{currentTab==301?'active':''}}" data-current="301" bindtap="clickTab">已完成</view>
+	</view>
+	<!--
+	<swiper duration="300" current="{{currentTab}}" bindchange="swiperTab">
+		<swiper-item>
+			<view class="swiper__tab__content">a</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="swiper__tab__content">b</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="swiper__tab__content">c</view>
+		</swiper-item>
+	</swiper>
+	-->
+</view>
+<view class="container">
+    <view class="orders">
+        <navigator url="../orderDetail/orderDetail?id={{item.id}}" class="order" wx:for="{{orderList}}" wx:key="{{item.id}}">
+            <view class="h">
+
+                <view class="l">订单编号：{{item.order_sn}}</view>
+                <view class="r">{{item.order_status_text}}</view>
+            </view>
+            <view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+                <view class="img">
+                    <image src="{{gitem.list_pic_url}}"></image>
+                </view>
+                <view class="info">
+                    <text class="name">{{gitem.goods_name}}</text>
+                    <text class="number">共{{gitem.number}}件商品</text>
+                </view>
+                <view class="status"></view>
+            </view>
+            <view class="b">
+                <view class="l">实付：￥{{item.actual_price}}</view>
+                <view class="r">
+                    <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">去付款</button>
+                </view>
+                <view class="r">
+                    <navigator url="/pages/ucenter/logistics/logistics?id={{item.id}}">
+                        <button class="btnlogistics" data-order-index="{{index}}"  wx:if="{{item.order_status==300||item.order_status==301}}">查看物流</button>
+                    </navigator>
+                </view>
+            </view>
+        </navigator>
+    </view>
+    <view wx:if="{{totalPages >= page-1}}"  class="loadmore">
+      <block wx:if="{{nomore}}">
+        <text>{{nomoreText}}</text>
+      </block>
+      <block wx:else>
+        <text class="iconfont icon-loading loading" space="nbsp"></text>
+        <text> {{loadmoreText}}</text>
+      </block>
+    </view>
+</view>

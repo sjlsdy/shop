@@ -1,0 +1,87 @@
+<view class="container">
+	<view class="no-cart" wx:if="{{cartGoods.length <= 0}}">
+		<view class="title-img">
+			<image src="https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/cart-none.png" mode="scaleToFill" />
+		</view>
+		<view class="title-box">
+			你的购物车空空如也,快去挑喜欢的商品!
+		</view>
+		<view class="to-index-btn" bindtap="toIndexPage">
+			去挑商品
+		</view>
+		<view class="recommend-goods-frame">
+			<view class="recommend-goods-title">- 为您推荐 -</view>
+			<view class="recommend-goods-box">
+			<block wx:for-index="index" wx:for="{{floorGoods}}" wx:for-item="item" wx:key="id">
+				<navigator url="../goods/goods?id={{item.id}}" class="recommend-goods-item">
+					<view class="recommend-goods-item-img">
+						<image src="{{item.imgUrl}}" mode="scaleToFill" style="width: 369rpx; height: 369rpx;" />
+					</view>
+					<view class="recommend-goods-item-text">
+						<view class="recommend-goods-item-name">{{item.name}}</view>
+						<view class="recommend-goods-item-price">￥{{item.retailprice}}</view>
+					</view>
+				</navigator>
+			</block>
+			</view>
+		</view>
+	</view>
+	<view class="cart-view" wx:if="{{cartGoods.length > 0}}">
+		<view class="cart-view-address-frame">
+			<view class="cart-view-address-info" bindtap="toAddressPage">
+				{{addressText}}
+			</view>
+			<view class="delete" bindtap="editCart">{{!isEditCart ? '编辑商品' : '完成'}}</view>
+		</view>
+		<view class="list">
+			<view class="group-frame" wx:for="{{cartGoods}}" wx:key="{{item.id}}" wx:for-item="val" wx:for-index="pindex">
+				<view class="group-title">
+					<view class="group-title-checkbox" bindtap="checkDaddy" data-p-index="{{pindex}}">
+						<image src="https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/checkbox-no.png" mode="scaleToFill" style="width: 40rpx; height: 40rpx;" wx:if="{{!val.checked}}" />
+						<image src="https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/checkbox-yes.png" mode="scaleToFill" style="width: 40rpx; height: 40rpx;" wx:if="{{!!val.checked}}" />
+					</view>
+					<view class="group-title-logo">
+						<image src="{{val.app_list_pic_url}}" mode="scaleToFill" style="width: 48rpx; height: 48rpx;" />
+					</view>
+					<view>
+						{{val.title}}
+					</view>
+				</view>
+				<view class="group-item">
+					<view class="goods">
+						<view class="item {{isEditCart ? 'edit' : ''}}" wx:for="{{val.list}}" wx:key="{{item.id}}" wx:for-item="item" wx:for-index="index">
+							<view class="cart-checkbox" bindtap="checkedItem" data-p-index="{{pindex}}" data-item-index="{{index}}">
+								<image src="https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/checkbox-no.png" mode="scaleToFill" wx:if="{{!item.checked}}" />
+								<image src="https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/checkbox-yes.png" mode="scaleToFill" wx:if="{{!!item.checked}}" />
+							</view>
+							<view class="cart-img" bindtap="viewItem" data-p-index="{{pindex}}" data-item-index="{{index}}">
+								<image src="{{item.list_pic_url}}" mode="scaleToFill"></image>
+							</view>
+							<view class="cart-goods">
+								<view class="name">{{item.goods_name}}</view>
+								<view class="attr">{{item.goods_specifition_name_value||''}}</view>
+								<view class="info">
+									<view class="price">￥{{item.retail_price}}</view>
+									<view class="selnum">
+										<view class="cut" bindtap="cutNumber" data-p-index="{{pindex}}" data-item-index="{{index}}">-</view>
+										<input value="{{item.number}}" class="number" type="number" />
+										<view class="add" bindtap="addNumber" data-p-index="{{pindex}}" data-item-index="{{index}}">+</view>
+									</view>
+								</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="cart-bottom">
+			<view class="checkbox {{checkedAllStatus ? 'checked' : ''}}" bindtap="checkedAll">
+				{{cartTotal.checkedGoodsCount > 0 ? '已选 (' + cartTotal.checkedGoodsCount + ') 件': '全选'}}
+			</view>
+			<view class="total" wx:if="{{!isEditCart}}">合计{{!isEditCart ? '￥'+cartTotal.checkedGoodsAmount : ''}}</view>
+			<view class="checkout small {{cartTotal.checkedGoodsCount > 0 ? '':'disable'}}" bindtap="deleteCart" wx:if="{{isEditCart}}">删除所选</view>
+			<view class="checkout big" bindtap="checkoutOrder" wx:if="{{!isEditCart && cartTotal.checkedGoodsCount > 0}}">去结算({{cartTotal.checkedGoodsCount}}件)</view>
+			<view class="checkout big disable" bindtap="checkoutOrder" wx:if="{{!isEditCart && cartTotal.checkedGoodsCount === 0}}">去结算</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,50 @@
+/* pages/ucenter/order/logistics.wxss */
+.weui-cell-third{
+  background: #fff;
+}
+.page__title{
+padding:5px;
+margin:0 auto;
+display:flex;
+justify-content:center;
+font-size:16px;
+}
+.weui-cell-list{
+  background: #fff;
+  margin: 5px 50px 5px 50px;
+}
+.weui-cell-line{
+/* width: 100px; */
+margin-left: 5px;
+  border-left: 1px solid #ddd;
+  min-height: 100px;
+  background: #fff;
+  margin-bottom:5px;
+}
+.weui-cell-circle{
+  border: 1px solid #000;
+  border-radius: 5px;
+  width: 10px;
+  height: 10px;
+  border-color: blue;
+  margin-bottom:5px;
+}
+.weui-cell-time{
+  /* width: 50px; */
+  float: left;
+  font-size:14px;
+  padding-left: 15px;
+  /*width: 100px;*/
+}
+.weui-cell-event{
+
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.weui-cell-name{
+font-size:14px;
+height:23px;
+margin-left: 100px;
+
+
+}

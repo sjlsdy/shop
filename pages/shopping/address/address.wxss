@@ -1,0 +1,139 @@
+page {
+	height: 100%;
+}
+
+.container {
+	background: #FFF;
+	height: 100%;
+	width: 100%;
+}
+
+/* 空提示 */
+
+.empty-view {
+	background-color: #fff;
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/address-bg.png");
+	background-size: auto 13rpx;
+	background-repeat: repeat-x;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.empty-view .icon {
+	height: 254rpx;
+	width: 254rpx;
+	margin-bottom: 40rpx;
+	margin-top: -294rpx;
+}
+
+.empty-view .text {
+	width: auto;
+	font-size: 26rpx;
+	line-height: 30rpx;
+	color: #ABABAB;
+}
+
+/* 底部按钮 */
+.add-address {
+	background: #952934;
+	text-align: center;
+	height: 100rpx;
+	line-height: 100rpx;
+	position: fixed;
+	color: #fff;
+	font-size: 32rpx;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+
+/* 新的地址样式 */
+
+.address-box {
+	width: 100%;
+	background-color: #fff;
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/address-bg.png");
+	background-size: auto 13rpx;
+	background-repeat: repeat-x;
+	margin-bottom: 100rpx;
+}
+
+.address-item {
+	display: flex;
+	align-items: center;
+	padding: 34rpx 28rpx 28rpx 28rpx;
+	border-bottom: #ECECEC 1rpx solid;
+}
+
+.address-item.address-empty {
+	line-height: 75rpx;
+	text-align: center;
+}
+
+.address-item .icon-name {
+	width: 85rpx;
+	height: 85rpx;
+	border-radius: 85rpx;
+	border: 1px solid #CCC5B7;
+	background: #F8F6F0;
+	font-size: 42rpx;
+	color: #998A6E;
+	text-align: center;
+	line-height: 85rpx;
+	flex-shrink: 0;
+}
+
+.address-item .address-info {
+	padding: 0 0 0 36rpx;
+	flex: 1;
+}
+
+.address-info .name-box {
+	font-size: 32rpx;
+	line-height: 45rpx;
+	margin-bottom: 12rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.address-info .name-box .name {
+	font-size: 32rpx;
+	margin-right: 20rpx;
+}
+
+.address-info .name-box .mobile {
+	font-size: 32rpx;
+	margin-right: 20rpx;
+}
+
+.address-info .name-box .theicon {
+	margin-right: 20rpx;
+	width: 64rpx;
+	height: 35rpx;
+	line-height: 35rpx;
+	border: #952934 1rpx solid;
+	border-radius: 5rpx;
+	color: #952934;
+	font-size: 24rpx;
+	text-align: center;
+}
+
+.address-item .name-box .address-edit {
+	flex: 1;
+}
+
+.address-item .name-box .address-edit image {
+	width: 30rpx;
+	height: 30rpx;
+	float: right;
+}
+
+.address-item .address-info .address {
+	color: #7A7A7A;
+	font-size: 26rpx;
+}

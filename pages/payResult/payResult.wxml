@@ -1,0 +1,63 @@
+<view class="container">
+	<view class="pay-result">
+		<!--支付成功-->
+		<view class="success" wx:if="{{status == true}}">
+			<view class="msg">
+				<view class="msg-icon">
+					<image src="/static/b6images/WX-pay-success.png"></image>
+				</view>
+				<view class="msg-text">
+					支付已成功
+				</view>
+			</view>
+			<view class="tips">
+				<view class="p">请在"我的订单"查看订单详情</view>
+			</view>
+			<view class="btns">
+				<navigator class="btn" url="/pages/ucenter/orderDetail/orderDetail?id={{orderId}}" open-type="redirect">查看订单</navigator>
+				<navigator class="btn re" url="/pages/index/index" open-type="switchTab">继续购物</navigator>
+			</view>
+			<view class="recommend-goods-frame">
+				<view class="recommend-goods-title">- 为您推荐 -</view>
+				<view class="recommend-goods-box">
+					<block wx:for-index="index" wx:for="{{floorGoods}}" wx:for-item="item" wx:key="id">
+						<navigator url="../goods/goods?id={{item.id}}" class="recommend-goods-item">
+							<view class="recommend-goods-item-img">
+								<image src="{{item.imgUrl}}" mode="scaleToFill" style="width: 369rpx; height: 369rpx;" />
+							</view>
+							<view class="recommend-goods-item-text">
+								<view class="recommend-goods-item-name">{{item.name}}</view>
+								<view class="recommend-goods-item-price">￥{{item.retailPrice}}</view>
+							</view>
+						</navigator>
+					</block>
+				</view>
+			</view>
+		</view>
+		<!--支付失败-->
+		<view class="error" wx:if="{{status != true}}">
+			<view class="msg">
+				<view class="msg-icon">
+					<image src="/static/b6images/WX-pay-error.png"></image>
+				</view>
+				<view class="msg-text">
+					支付失败
+				</view>
+			</view>
+			<view class="tips">
+				<view class="p">请在 <text class="time">1小时</text> 内完成付款</view>
+				<view class="p">否则订单将会被系统取消</view>
+			</view>
+			<view class="btns">
+				<navigator class="btn" url="/pages/ucenter/orderDetail/orderDetail?id={{orderId}}" open-type="redirect">查看订单</navigator>
+				<view class="btn re" bindtap='payOrder'>重新支付</view>
+			</view>
+			<view class="order-overview">
+				<view>{{orderInfo.consignee}} {{orderInfo.mobile}}</view>
+				<view>{{orderInfo.full_region}}{{orderInfo.address}}</view>
+				<view>实付款:<text>￥{{orderInfo.actual_price}}</text></view>
+			</view>
+		</view>
+	</view>
+
+</view>

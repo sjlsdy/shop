@@ -1,0 +1,49 @@
+<view class="bg-mask" bindtap="cancelSelectRegion" wx:if="{{openSelectRegion}}"></view>
+
+<view class="region-select" wx:if="{{openSelectRegion}}">
+	<view class="hd">
+		<view class="region-selected">
+			<view class="item {{item.id == 0 ? 'disabled' : ''}} {{(regionType -1) === index ? 'selected' : ''}}" bindtap="selectRegionType" data-region-type-index="{{index}}" wx:for="{{selectRegionList}}" wx:key="{{item.id}}">{{item.name}}</view>
+		</view>
+		<view class="done {{selectRegionDone ? '' : 'disabled'}}" bindtap="doneSelectRegion">确定</view>
+	</view>
+	<view class="bd">
+		<scroll-view scroll-y="true" class="region-list">
+			<view class="item {{item.selected ? 'selected' : ''}}" bindtap="selectRegion" data-region-index="{{index}}" wx:for="{{regionList}}" wx:key="{{item.id}}">{{item.name}}</view>
+		</scroll-view>
+	</view>
+</view>
+
+<view class="add-address">
+	<view class="add-form">
+		<view class="form-item">
+			<view>收货人：</view>
+			<input class="input" bindinput="bindinputName" value="{{address.userName}}" auto-focus/>
+		</view>
+		<view class="form-item">
+			<view>手机号：</view>
+			<input class="input" bindinput="bindinputMobile" value="{{address.telNumber}}" maxlength="11" type="number" />
+		</view>
+		<view class="form-item">
+			<view>所在地区：</view>
+			<input class="input" value="{{address.full_region}}" disabled="true" bindtap="chooseRegion" />
+		</view>
+		<view class="form-item">
+			<view>详细地址：</view>
+			<textarea class="textarea" bindinput="bindinputAddress" value="{{address.detailInfo}}" placeholder="街道门牌号等" />
+			<view class="click-map-btn">
+				<image src="../../../static/b6images/WX-shopimgAddress.png" bindtap='getMap' />
+			</view>
+		</view>
+		<view class="form-default" bindtap="bindIsDefault">
+			<view class="set-icon">
+				<image src="https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/checkbox-yes.png" mode="scaleToFill" style="width: 40rpx; height: 40rpx;" wx:if="{{address.is_default == 1}}" />
+				<image src="https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/checkbox-no.png" mode="scaleToFill" style="width: 40rpx; height: 40rpx;" wx:else />
+			</view>
+			<view>设为默认收货地址</view>
+		</view>
+	</view>
+	<view class="btns">
+		<view class="save" bindtap="saveAddress">保存</view>
+	</view>
+</view>

@@ -1,0 +1,15 @@
+<view class='weui-cell-third'>
+    <view class="page__title">
+        物流详情
+    </view>
+    <block wx:for="{{logisticsData}}"wx:key="item.">
+        <view class='weui-cell-list'>
+        <view class='weui-cell-time'>{{item.AcceptTime}}</view>
+        <view class='weui-cell-circle'></view>
+        <view class='weui-cell-line'>
+          <view class='weui-cell-event'>{{item.AcceptStation}}</view>
+        </view>  
+      </view>
+
+    </block>
+</view>

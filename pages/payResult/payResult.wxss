@@ -1,0 +1,148 @@
+page {
+	min-height: 100%;
+	width: 100%;
+	background: #fff;
+}
+
+.container {
+	height: 100%;
+	background: #fff;
+}
+
+.pay-result {
+	background: #fff;
+}
+
+.pay-result .msg {
+	margin: 112rpx 0 25rpx 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pay-result .msg .msg-icon {
+	width: 40rpx;
+	height: 40rpx;
+	margin: 0 26rpx 0 0;
+}
+
+.pay-result .msg .msg-icon image {
+	width: 40rpx;
+	height: 40rpx;
+}
+
+.pay-result .msg .msg-text {
+	color: #952934;
+	font-size: 44rpx;
+	line-height: 63rpx;
+}
+.pay-result .success .msg .msg-text {
+	color: #998A6E;
+}
+
+.pay-result .msg {
+	color: #b4282d;
+	margin-bottom: 60rpx;
+}
+
+.pay-result .tips {
+	color: #7f7f7f;
+	margin-bottom: 65rpx;
+}
+
+.pay-result .tips .p {
+	font-size: 26rpx;
+	line-height: 37rpx;
+	text-align: center;
+	color: #7A7A7A;
+}
+
+.pay-result .tips .p .time {
+	color: #952934;
+}
+
+.pay-result .btns {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pay-result .btn {
+	text-align: center;
+	height: 80rpx;
+	margin: 0 20rpx;
+	width: 242rpx;
+	line-height: 78rpx;
+	border: 1rpx solid #868686;
+	color: #7A7A7A;
+	border-radius: 6rpx;
+}
+
+.pay-result .btn.re {
+	border: 1rpx solid #952934;
+	color: #952934;
+}
+
+/* 结账信息预览 */
+.order-overview {
+	border-top: #ECECEC 1rpx solid;
+	background: #FFF;
+	line-height: 44rpx;
+	padding: 28rpx;
+	margin-top: 68rpx;
+	text-align: left;
+}
+
+.order-overview view,
+.order-overview view text {
+	color: #7A7A7A;
+	font-size: 28rpx;
+}
+
+/* 支付成功推荐  */
+.recommend-goods-frame {
+	margin-top: 68rpx;
+	overflow: hidden;
+	background: #F4F4F4;
+}
+.recommend-goods-title {
+	line-height: 45rpx;
+	margin: 25rpx 0;
+	text-align: center;
+	font-size: 32rpx;
+}
+.recommend-goods-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.recommend-goods-item {
+	width: 369rpx;
+	height: 545rpx;
+	background: #FFF;
+	position: relative;
+}
+.recommend-goods-item:nth-child(odd) {
+	margin-right: 12rpx;
+}
+.recommend-goods-item:nth-child(n+3) {
+	margin-top: 12rpx;
+}
+.recommend-goods-item-text {
+	padding: 28rpx
+}
+.recommend-goods-item-img {
+	width:　369rpx;
+	height:　369rpx;
+	background: #FFF;
+}
+.recommend-goods-item-img image {
+	display: block;
+}
+.recommend-goods-item-name {
+	height: 80rpx;
+	overflow: hidden;
+}
+.recommend-goods-item-price {
+	color: #952934;
+	line-height: 40rpx;
+}

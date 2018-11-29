@@ -1,0 +1,5 @@
+{
+	"usingComponents": {
+		"indexCountdown": "../../../component/index-countdown/index-countdown"
+	}
+}

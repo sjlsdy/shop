@@ -1,0 +1,125 @@
+<view class="toptitlebac">
+	<view class="toptitlebac-text">
+		<view class="toptitlebac-mymoney">
+			￥<text>698</text>
+		</view>
+		<view class="toptitlebac-moneytext">我的钱包</view>
+	</view>
+	<view class="toptitlebac-sp">
+		<view class="toptitlebac-sp-title">今日红包总金额</view>
+		<view class="number-box">
+			<view class="number-item">
+				<scroll-view scroll-y scroll-with-animation scroll-into-view="{{ahref}}" style="height: 72rpx;">
+					<view class="numberfor0" id='a0'>0</view>
+					<view class="numberfor1" id='a1'>1</view>
+					<view class="numberfor2" id='a2'>2</view>
+					<view class="numberfor3" id='a3'>3</view>
+					<view class="numberfor4" id='a4'>4</view>
+					<view class="numberfor5" id='a5'>5</view>
+					<view class="numberfor6" id='a6'>6</view>
+					<view class="numberfor7" id='a7'>7</view>
+					<view class="numberfor8" id='a8'>8</view>
+					<view class="numberfor9" id='a9'>9</view>
+				</scroll-view>
+			</view>
+			<view class="number-item">
+				<scroll-view scroll-y scroll-with-animation scroll-into-view="{{bhref}}" style="height: 72rpx;">
+					<view class="numberfor0" id='b0'>0</view>
+					<view class="numberfor1" id='b1'>1</view>
+					<view class="numberfor2" id='b2'>2</view>
+					<view class="numberfor3" id='b3'>3</view>
+					<view class="numberfor4" id='b4'>4</view>
+					<view class="numberfor5" id='b5'>5</view>
+					<view class="numberfor6" id='b6'>6</view>
+					<view class="numberfor7" id='b7'>7</view>
+					<view class="numberfor8" id='b8'>8</view>
+					<view class="numberfor9" id='b9'>9</view>
+				</scroll-view>
+			</view>
+			<view class="number-item">
+				<scroll-view scroll-y scroll-with-animation scroll-into-view="{{chref}}" style="height: 72rpx;">
+					<view class="numberfor0" id='c0'>0</view>
+					<view class="numberfor1" id='c1'>1</view>
+					<view class="numberfor2" id='c2'>2</view>
+					<view class="numberfor3" id='c3'>3</view>
+					<view class="numberfor4" id='c4'>4</view>
+					<view class="numberfor5" id='c5'>5</view>
+					<view class="numberfor6" id='c6'>6</view>
+					<view class="numberfor7" id='c7'>7</view>
+					<view class="numberfor8" id='c8'>8</view>
+					<view class="numberfor9" id='c9'>9</view>
+				</scroll-view>
+			</view>
+			<view class="number-item">
+				<scroll-view scroll-y scroll-with-animation scroll-into-view="{{dhref}}" style="height: 72rpx;">
+					<view class="numberfor0" id='d0'>0</view>
+					<view class="numberfor1" id='d1'>1</view>
+					<view class="numberfor2" id='d2'>2</view>
+					<view class="numberfor3" id='d3'>3</view>
+					<view class="numberfor4" id='d4'>4</view>
+					<view class="numberfor5" id='d5'>5</view>
+					<view class="numberfor6" id='d6'>6</view>
+					<view class="numberfor7" id='d7'>7</view>
+					<view class="numberfor8" id='d8'>8</view>
+					<view class="numberfor9" id='d9'>9</view>
+				</scroll-view>
+			</view>
+			<view class="number-item">
+				<scroll-view scroll-y scroll-with-animation scroll-into-view="{{ehref}}" style="height: 72rpx;">
+					<view class="numberfor0" id='e0'>0</view>
+					<view class="numberfor1" id='e1'>1</view>
+					<view class="numberfor2" id='e2'>2</view>
+					<view class="numberfor3" id='ea3'>3</view>
+					<view class="numberfor4" id='e4'>4</view>
+					<view class="numberfor5" id='e5'>5</view>
+					<view class="numberfor6" id='e6'>6</view>
+					<view class="numberfor7" id='e7'>7</view>
+					<view class="numberfor8" id='e8'>8</view>
+					<view class="numberfor9" id='e9'>9</view>
+				</scroll-view>
+			</view>
+			<view class="number-item">
+				<scroll-view scroll-y scroll-with-animation scroll-into-view="{{fhref}}" style="height: 72rpx;">
+					<view class="numberfor0" id='f0'>0</view>
+					<view class="numberfor1" id='f1'>1</view>
+					<view class="numberfor2" id='f2'>2</view>
+					<view class="numberfor3" id='f3'>3</view>
+					<view class="numberfor4" id='f4'>4</view>
+					<view class="numberfor5" id='f5'>5</view>
+					<view class="numberfor6" id='f6'>6</view>
+					<view class="numberfor7" id='f7'>7</view>
+					<view class="numberfor8" id='f8'>8</view>
+					<view class="numberfor9" id='f9'>9</view>
+				</scroll-view>
+			</view>
+			<view class="number-item">
+				<scroll-view scroll-y scroll-with-animation scroll-into-view="{{ghref}}" style="height: 72rpx;">
+					<view class="numberfor0" id='g0'>0</view>
+					<view class="numberfor1" id='g1'>1</view>
+					<view class="numberfor2" id='g2'>2</view>
+					<view class="numberfor3" id='g3'>3</view>
+					<view class="numberfor4" id='g4'>4</view>
+					<view class="numberfor5" id='g5'>5</view>
+					<view class="numberfor6" id='g6'>6</view>
+					<view class="numberfor7" id='g7'>7</view>
+					<view class="numberfor8" id='g8'>8</view>
+					<view class="numberfor9" id='g9'>9</view>
+				</scroll-view>
+			</view>
+			<view class="number-item">
+				<scroll-view scroll-y scroll-with-animation scroll-into-view="{{hhref}}" style="height: 72rpx;">
+					<view class="numberfor0" id='h0'>0</view>
+					<view class="numberfor1" id='h1'>1</view>
+					<view class="numberfor2" id='h2'>2</view>
+					<view class="numberfor3" id='h3'>3</view>
+					<view class="numberfor4" id='h4'>4</view>
+					<view class="numberfor5" id='h5'>5</view>
+					<view class="numberfor6" id='h6'>6</view>
+					<view class="numberfor7" id='h7'>7</view>
+					<view class="numberfor8" id='h8'>8</view>
+					<view class="numberfor9" id='h9'>9</view>
+				</scroll-view>
+			</view>
+		</view>
+	</view>
+</view>

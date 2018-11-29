@@ -1,0 +1,198 @@
+page {
+	background: #FFF;
+}
+
+.add-address {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/address-bg.png");
+	background-size: auto 13rpx;
+	background-repeat: repeat-x;
+	margin-bottom: 110rpx;
+	overflow: hidden;
+}
+
+.add-address .add-form {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 13rpx;
+}
+
+.add-address .form-item {
+	padding: 38rpx 28rpx;
+	line-height: 40rpx;
+	border-bottom: 1px solid #ECECEC;
+	display: flex;
+}
+
+.add-address .input {
+	flex: 1;
+	height: 40rpx;
+	min-height: 40rpx;
+	max-height: 40rpx;
+	line-height: 40rpx;
+	overflow: hidden;
+	font-size: 28rpx;
+}
+
+.add-address .textarea {
+	line-height: 40rpx;
+	height: 80rpx;
+	flex: 1;
+}
+
+.add-address .form-default {
+	font-size: 26rpx;
+	line-height: 40rpx;
+	padding: 20rpx 0;
+	display: flex;
+	align-items: center;
+}
+
+.add-address .form-default .set-icon {
+	margin: 0 10rpx 0 28rpx;
+}
+
+.click-map-btn {
+	width: 28rpx;
+	height: 34rpx;
+	margin-top: 46rpx;
+}
+
+.click-map-btn image {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* 选择地区 */
+
+.region-select {
+	width: 100%;
+	height: 600rpx;
+	background: #fff;
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	bottom: 0;
+}
+
+.region-select .hd {
+	height: 108rpx;
+	width: 100%;
+	border-bottom: 1px solid #f4f4f4;
+	padding: 46rpx 30rpx 0 30rpx;
+}
+
+.region-select .region-selected {
+	float: left;
+	height: 60rpx;
+	display: flex;
+}
+
+.region-select .region-selected .item {
+	max-width: 140rpx;
+	margin-right: 30rpx;
+	text-align: left;
+	line-height: 60rpx;
+	height: 100%;
+	color: #333;
+	font-size: 28rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.region-select .region-selected .item.disabled {
+	color: #999;
+}
+
+.region-select .region-selected .item.selected {
+	color: #b4282d;
+}
+
+.region-select .done {
+	float: right;
+	height: 60rpx;
+	width: 60rpx;
+	border: none;
+	background: #fff;
+	line-height: 60rpx;
+	text-align: center;
+	color: #333;
+	font-size: 28rpx;
+}
+
+.region-select .done.disabled {
+	color: #999;
+}
+
+.region-select .bd {
+	height: 492rpx;
+	width: 100%;
+	padding: 0 30rpx;
+}
+
+.region-select {
+	height: auto;
+	overflow: scroll;
+}
+
+.region-list {
+	width: 100%;
+	height: 100%;
+	line-height: 104rpx;
+	text-align: left;
+	color: #333;
+	font-size: 28rpx;
+}
+
+.region-select .item {
+	width: 100%;
+	height: 104rpx;
+	line-height: 104rpx;
+	text-align: left;
+	color: #333;
+	font-size: 28rpx;
+}
+
+.region-select .region-list .item.selected {
+	color: #b4282d;
+}
+
+
+/* 遮罩 */
+
+.bg-mask {
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 8;
+}
+
+
+/* 底部按钮 */
+
+.add-address .btns {
+	z-index: 1;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	display: flex;
+	height: 110rpx;
+	box-shadow: 0 0 6rpx rgba(0,0,0,0.5);
+}
+
+.add-address .save {
+	flex: 1;
+	height: 110rpx;
+	text-align: center;
+	line-height: 110rpx;
+	font-size: 32rpx;
+	color: #fff;
+	background: #952934;
+}

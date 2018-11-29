@@ -1,0 +1,141 @@
+.toptitlebac {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac.png");
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	height: 170rpx;
+	display: flex;
+}
+.toptitlebac-text {
+	width: 183rpx;
+	height: 170rpx;
+	text-align: center;
+}
+.toptitlebac-text .toptitlebac-mymoney {
+	color: #FFF;
+	margin-top: 36rpx;
+	margin-bottom: 6rpx;
+	font-size: 28rpx;
+}
+.toptitlebac-text .toptitlebac-mymoney text {
+	font-size: 36rpx;
+	color: #FFF;
+}
+.toptitlebac-text .toptitlebac-moneytext {
+	color: #FFF;
+	font-size: 28rpx;
+}
+.toptitlebac-sp {
+	flex-grow: 1;
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-line.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: auto 100%;
+}
+.toptitlebac-sp-title {
+	margin: 30rpx 0 6rpx 0;
+	font-size: 28rpx;
+	line-height: 30rpx;
+	text-align: center;
+	color: #FFF;
+}
+.number-box {
+	display: flex;
+	justify-content: center;
+}
+.number-item {
+	width: 62rpx;
+	height: 93rpx;
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-bg.png");
+	background-size: 100% 100%;
+}
+
+.numberfor0 {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-0.png");
+	background-size: 38.7% 34.4%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 62rpx;
+	height: 93rpx;
+	text-indent: -9999rpx;
+}
+.numberfor1 {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-1.png");
+	background-size: 38.7% 34.4%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 62rpx;
+	height: 93rpx;
+	text-indent: -9999rpx;
+}
+.numberfor2 {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-2.png");
+	background-size: 38.7% 34.4%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 62rpx;
+	height: 93rpx;
+	text-indent: -9999rpx;
+}
+.numberfor3 {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-3.png");
+	background-size: 38.7% 34.4%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 62rpx;
+	height: 93rpx;
+	text-indent: -9999rpx;
+}
+.numberfor4 {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-4.png");
+	background-size: 38.7% 34.4%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 62rpx;
+	height: 93rpx;
+	text-indent: -9999rpx;
+}
+.numberfor5 {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-5.png");
+	background-size: 38.7% 34.4%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 62rpx;
+	height: 93rpx;
+	text-indent: -9999rpx;
+}
+.numberfor6 {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-6.png");
+	background-size: 38.7% 34.4%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 62rpx;
+	height: 93rpx;
+	text-indent: -9999rpx;
+}
+.numberfor7 {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-7.png");
+	background-size: 38.7% 34.4%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 62rpx;
+	height: 93rpx;
+	text-indent: -9999rpx;
+}
+.numberfor8 {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-8.png");
+	background-size: 38.7% 34.4%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 62rpx;
+	height: 93rpx;
+	text-indent: -9999rpx;
+}
+.numberfor9 {
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/index-toptitlebac-number-0.png");
+	background-size: 38.7% 34.4%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 62rpx;
+	height: 93rpx;
+	text-indent: -9999rpx;
+}

@@ -1,0 +1,243 @@
+page{
+    height: 100%;
+    background: #f4f4f4;
+}
+.add-address .add-form{
+    background: #fff;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.add-address .form-item{
+    height: 116rpx;
+    padding-left: 31.25rpx;
+    border-bottom: 1px solid #d9d9d9;
+    display: flex;
+    align-items: center;
+    padding-right: 31.25rpx;
+}
+
+.add-address .input{
+    flex: 1;
+    height: 40rpx;
+    line-height: 40rpx;
+    overflow: hidden;
+}
+.add-address .form-default{
+    border-bottom: 1px solid #d9d9d9;
+    height: 96rpx;
+    padding-top: 20rpx;
+    padding-left: 28rpx;
+    font-size: 28rpx;
+}
+
+.default-input{
+    padding-left: 28rpx;
+    display: block;
+    width: 240rpx;
+    height: 40rpx;
+    padding-left: 50rpx;
+    line-height: 40rpx;
+    background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/checkbox-sed825af9d3-a6b8540d42.png)1rpx -448rpx no-repeat;
+    background-size: 38rpx 486rpx;
+    font-size: 28rpx;
+}
+
+.default-input.selected{
+    background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/checkbox-sed825af9d3-a6b8540d42.png) 0 -192rpx no-repeat;
+    background-size: 38rpx 486rpx;
+}
+
+.add-address .btns{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    display: flex;
+    height: 100rpx;
+    width: 100%;
+}
+
+.add-address .cannel,.add-address .save{
+    flex: 1;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    color: #fff;
+    border:none;
+    border-radius: 0;
+}
+
+.add-address .cannel{
+    background: #333;
+}
+
+.add-address .save{
+    height: 100rpx;
+    background: #952934;
+}
+
+
+.region-select{
+  width: 100%;
+  height: 600rpx;
+  background: #fff;
+  position: fixed;
+  z-index: 10;
+  left:0;
+  bottom: 0;
+}
+
+.region-select .hd{
+  height: 108rpx;
+  width: 100%;
+  border-bottom: 1px solid #f4f4f4;
+  padding: 46rpx 30rpx 0 30rpx;
+}
+
+.region-select .region-selected{
+  float: left;
+  height: 60rpx;
+  display: flex;
+}
+
+.region-select .region-selected .item{
+  max-width: 140rpx;
+  margin-right: 30rpx;
+  text-align: left;
+  line-height: 60rpx;
+  height: 100%;
+  color: #333;
+  font-size: 28rpx;
+  overflow: hidden;
+      text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.region-select .region-selected .item.disabled{
+  color: #999;
+}
+
+.region-select .region-selected .item.selected{
+  color: #b4282d;
+}
+
+.region-select .done{
+  float: right;
+  height: 60rpx;
+  width: 60rpx;
+  border: none;
+  background: #fff;
+  line-height: 60rpx;
+  text-align: center;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.region-select .done.disabled{
+  color: #999;
+}
+
+
+
+.region-select .bd{
+  height: 492rpx;
+  width: 100%;
+  padding: 0 30rpx;
+}
+
+.region-select .region-list{
+  height: auto;
+  overflow: scroll;
+
+}
+
+.region-select .region-list .item{
+  width: 100%;
+  height: 104rpx;
+  line-height: 104rpx;
+  text-align: left;
+  color: #333;
+  font-size: 28rpx;
+}
+
+.region-select .region-list .item.selected{
+  color: #b4282d;
+}
+
+
+.bg-mask{
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 8;
+}
+
+/*new*/
+.addree-form{
+    background: #ffffff;
+}
+
+.form-item-text{
+    font-size: 28rpx;
+    color: #7A7A7A;
+    line-height: 40rpx;
+}
+.form-item-input{
+    font-size: 28rpx;
+    color: #2D2D2D;
+    letter-spacing: 1.16px;
+}
+.form-item-name{
+    padding: 35rpx 28rpx 26rpx 28rpx;
+    border-bottom: 1rpx solid #ECECEC;
+    display: flex;
+    align-items: center;
+    height: 101rpx;
+}
+.form-item-mobile{
+    padding: 38rpx 28rpx 32rpx 28rpx;
+    border-bottom: 1rpx solid #ECECEC;
+    display: flex;
+    align-items: center;
+    height: 110rpx;
+}
+
+.form-item-address{
+    padding: 33rpx 28rpx 37rpx 29rpx;
+    border-bottom: 1rpx solid #ECECEC;
+    display: flex;
+    align-items: center;
+    height: 110rpx;
+}
+
+.form-item-detailAddress{
+    padding: 22rpx 28rpx 19rpx 34rpx;
+    height: 122rpx;
+    border-bottom: 1rpx solid #ECECEC;
+    display: flex;
+}
+.shopimgRight{
+    height: 26rpx;
+    width: 13rpx;
+}
+.addressInput{
+    line-height: 40rpx;
+}
+.shopimgAddress{
+    height:34rpx;
+    width: 29rpx;
+}
+.form-item-icon{
+    padding-top: 41rpx;
+}
+.form-item-back{
+    background: #ffffff;
+    width: 100%;
+    height: 13rpx;
+}

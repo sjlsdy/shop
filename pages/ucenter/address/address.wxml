@@ -1,0 +1,58 @@
+<view class="container" bindtap="otherClick">
+    <view wx:if="{{ addressList.length > 0 }}" class="form-list">
+        <block wx:if="{{tools.platform=='ios'}}">
+            <view  class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-address-id="{{item.id}}" data-index="{{index}}" bindtap="addressAddOrUpdate" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{addressList}}" wx:key="">
+            <view style="display: flex;" class="form-list-box content">
+                <view class="list-menu-icon">{{item.surname}}</view>
+                <view class="list-menu-center">
+                    <view>
+                        <text class="list-menu-name">{{item.userName}}</text>
+                        <text class="list-menu-mobile">{{item.telNumber}}</text>
+                        <text class="list-menu-default" wx-if="{{item.is_default===1}}">默认</text>
+                    </view>
+                    <view class="list-menu-address">
+                        <view class="menu-address-content">{{item.full_region+item.detailInfo}}</view>
+                        <view><image src="../../../static/b6images/WX-shopimgEdit.png" class="form-list-ediit" /></view>
+                    </view>
+                </view>
+            </view>
+            <view class="del" data-address-id="{{item.id}}" catchtap="deleteAddress" data-index="{{index}}">删除</view>
+        </view>
+        </block>
+        <block wx:else>
+            <view class="touch-item" data-address-id="{{item.id}}" data-index="{{index}}" bindlongpress="handleLongPress" bindtap="addressAddOrUpdate" wx:for="{{addressList}}" wx:key="">
+                <view style="display: flex;" class="form-list-box content">
+                    <view class="list-menu-icon">{{item.surname}}</view>
+                    <view class="list-menu-center">
+                        <view>
+                            <text class="list-menu-name">{{item.userName}}</text>
+                            <text class="list-menu-mobile">{{item.telNumber}}</text>
+                            <text class="list-menu-default" wx-if="{{item.is_default===1}}">默认</text>
+                        </view>
+                        <view class="list-menu-address">
+                            <view class="menu-address-content">{{item.full_region+item.detailInfo}}</view>
+                            <view><image src="../../../static/b6images/WX-shopimgEdit.png" class="form-list-ediit" /></view>
+                        </view>
+                    </view>
+                </view>
+                <view class="del" data-address-id="{{item.id}}" catchtap="deleteAddress" data-index="{{index}}">删除</view>
+            </view>
+        </block>
+    </view>
+    <view class="empty-view" wx:if="{{ addressList.length <= 0 }}">
+      <image class="icon" src="https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/address-none.png"></image>
+      <text class="text">您还没有收货地址，请点击下方+新建</text>
+    </view>
+    <view class="address-edit">
+        <view  class="edit" bindtap="addressAddOrUpdate" data-address-id="0">
+            <image class="edit_add" src="../../../static/b6images/WX-shopimgAdd.png" />
+            <view class="newaddress">新建地址</view>
+        </view>
+        <!--<view class='right' bindtap="addressAddBywx">微信添加</view>-->
+    </view>
+    <view class="androidback" wx:if="{{androidisTrue}}">
+    </view>
+    <view class="androidRemove"  wx:if="{{androidisTrue}}" catchtap="deleteAddress">
+        <text class="removetext">删除</text>
+    </view>
+</view>

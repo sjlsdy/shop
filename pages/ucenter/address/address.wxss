@@ -1,0 +1,372 @@
+page{
+    height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+}
+
+.address-list{
+    padding-left: 31.25rpx;
+    background: #fff url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/address-bg-bd30f2bfeb.png) 0 0 repeat-x;
+    background-size: auto 10.5rpx;
+    margin-bottom: 90rpx;
+}
+
+.address-list .item{
+    height: 156.55rpx;
+    align-items: center;
+    display: flex;
+    border-bottom: 1rpx solid #DCD9D9;
+}
+
+.address-list .l{
+    width: 155rpx;
+    height: 80rpx;
+    overflow: hidden;
+}
+
+.address-list .name{
+    width: 155rpx;
+    height: 43rpx;
+    font-size: 29rpx;
+    color: #333;
+    margin-bottom: 5.2rpx;
+        text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.address-list .default{
+    width: 62.5rpx;
+    height: 33rpx;
+    line-height: 28rpx;
+    text-align: center;
+    font-size: 20rpx;
+    color: #b4282d;
+    border: 1rpx solid #b4282d;
+    visibility: visible;
+}
+
+
+.address-list .c{
+    flex: 1;
+    height: auto;
+    overflow: hidden;
+}
+
+.address-list .mobile{
+
+    height: 29rpx;
+    font-size: 29rpx;
+    line-height: 29rpx;
+    overflow: hidden;
+    color: #333;
+    margin-bottom: 6.25rpx;
+}
+
+.address-list .address{
+    height: 37rpx;
+    font-size: 25rpx;
+    line-height: 37rpx;
+    overflow: hidden;
+    color: #666;
+}
+
+.address-list .r{
+    width: 52rpx;
+    height: auto;
+    overflow: hidden;
+    margin-right: 16.5rpx;
+}
+
+
+.add-address{
+    background: #b4282d;
+    text-align: center;
+    width: 100%;
+    height: 99rpx;
+    line-height: 99rpx;
+    position: fixed;
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    font-size: 29rpx;
+    bottom: 0;
+    left:0;
+}
+
+.empty-view{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.empty-view .icon{
+  height: 254rpx;
+  width: 254rpx;
+  margin-bottom: 40rpx;
+  margin-top: -294rpx;
+}
+
+.empty-view .text{
+  width: auto;
+  font-size: 26rpx;
+  line-height: 30rpx;
+  color: #ABABAB;
+}
+.address-edit{
+    position: fixed;
+    left:0;
+    bottom: 0;
+    height: 100rpx;
+    width: 100%;
+    display: flex;
+}
+.address-edit .left,.right{
+    flex: 1;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: #b4282d;
+    background: #b4282d;
+    font-size: 33rpx;
+    padding-left: 31.25rpx;
+    color: #fff;
+    text-align: center;
+    border-top: 1rpx solid rgba(0,0,0,0.2);
+    border-bottom: 1rpx solid rgba(0,0,0,0.2);
+    margin-left:10rpx;
+    margin-right:10rpx;
+    border-radius: 15rpx;
+}
+/*delte*/
+page {
+    background-color: white;
+}
+
+.addcontainer {
+    min-height: 100%;
+    padding: 20rpx 0rpx;
+}
+.touch-item {
+
+    font-size: 14px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border-bottom:1px solid #ccc;
+
+    width: 100%;
+
+    overflow: hidden
+
+}
+
+.content {
+
+    width: 100%;
+
+    padding: 10px;
+
+    line-height: 22px;
+
+    margin-right:0;
+
+    -webkit-transition: all 0.4s;
+
+    transition: all 0.4s;
+
+    -webkit-transform: translateX(90px);
+
+    transform: translateX(90px);
+
+    margin-left: -90px
+
+}
+
+.del {
+    background-color:#BD3543;
+
+    width: 200rpx;
+
+    font-size: 34rpx;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    -webkit-transform: translateX(200rpx);
+
+    transform: translateX(200rpx);
+
+    -webkit-transition: all 0.4s;
+
+    transition: all 0.4s;
+
+}
+
+.touch-move-active .content,
+
+.touch-move-active .del {
+
+    -webkit-transform: translateX(0);
+
+    transform: translateX(0);
+
+}
+
+
+/*new list*/
+
+.form-item-back{
+    background:#ffffff;
+    width: 100%;
+    height: 13rpx;
+}
+
+.form-list-menu{
+    padding: 32rpx 29rpx 39rpx 27rpx;
+    height: 202rpx;
+    background: #ffffff;
+}
+.form-list-ediit{
+    width: 30rpx;
+    height: 30rpx;
+}
+.list-menu-icon{
+    flex-shrink:0;
+    height: 84rpx;
+    width: 84rpx;
+    border-radius: 50%;
+    background: #F8F6F0;
+    color:#998A6E;
+    font-size: 42rpx;
+    border: 1px solid #CCC5B7;
+    line-height: 84rpx;
+    text-align: center;
+    margin-right: 36rpx;
+}
+
+.list-menu-mobile{
+    color: #2D2D2D;
+    font-size: 32rpx;
+    line-height: 45rpx;
+    padding-left: 19rpx;
+}
+.list-menu-name{
+    color: #2D2D2D;
+    font-size: 32rpx;
+    line-height: 45rpx;
+}
+
+.list-menu-address{
+    min-height: 74rpx;
+    font-size: 26rpx;
+    line-height: 37rpx;
+    color:#7A7A7A;
+    display: flex;
+    padding-top: 12rpx;
+    justify-content: space-between;
+}
+.list-menu-default{
+    margin-left: 25rpx;
+    font-size: 24rpx;
+    color: #952934;
+    border: 1rpx solid #952934;
+    border-radius: 5rpx;
+    line-height: 33rpx;
+    letter-spacing: 0.99px;
+    height: 35rpx;
+    width: 64rpx;
+}
+.menu-address-content{
+    padding-right: 72rpx;
+    font-size: 26rpx;
+    color:#7A7A7A;
+}
+
+.form-list-menu {
+    border-bottom:none;
+}
+
+.form-list-menu{
+    border-bottom: 1rpx solid #ECECEC;
+}
+.list-menu-center{
+    flex:1;
+}
+.address-edit{
+    overflow: hidden;
+}
+.address-edit .edit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#952934;
+    width: 100%;
+    height:100rpx;
+    line-height: 100rpx;
+    color: #ffffff;
+}
+.edit_add{
+    width: 26rpx;
+    height: 26rpx;
+}
+.add-font{
+    display: block;
+    font-size: 32rpx;
+    color: #FFFFFF;
+}
+.form-list{
+    margin-bottom: 100rpx;
+    background: #ffffff;
+}
+.newaddress{
+    font-size: 32rpx;
+    color:#ffffff;
+    padding-left:9rpx;
+}
+.androidback{
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    z-index: 99;
+}
+.androidRemove{
+    width: 559rpx;
+    height: 110rpx;
+    margin-top: -110rpx;
+    border-radius: 10rpx;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+.removetext{
+    color:#BD3543;
+    font-size: 34rpx;
+    line-height: 48rpx;
+}

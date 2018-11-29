@@ -1,0 +1,31 @@
+<view class="container">
+
+	<view class="address-box" wx:if="{{ addressList.length > 0 }}">
+		<view class="address-item" wx:for="{{addressList}}" wx:key="{{item.id}}" bindtap="selectAddress" data-address-id="{{item.id}}">
+			<view class="icon-name">
+				{{item.nameIcon}}
+			</view>
+			<view class="address-info">
+				<view class="name-box">
+					<view class="name">{{item.userName}}</view>
+					<view class="mobile">{{item.telNumber}}</view>
+					<view class="theicon" wx:if="{{item.is_default}}">默认</view>
+					<view class="address-edit">
+						<image src="/static/b6images/WX-shopimgEdit.png" catchtap="addressAddOrUpdate" data-address-id="{{item.id}}"></image>
+					</view>
+				</view>
+				<view class="address">{{item.full_region+item.detailInfo}}</view>
+			</view>
+		</view>
+		<view class="address-item address-empty" bindtap="addAddress" wx:if="{{checkedAddress.id <= 0}}">
+			<view class="m">
+				还没有收货地址，去添加
+			</view>
+		</view>
+	</view>
+	<view class="empty-view" wx:if="{{ addressList.length <= 0 }}">
+		<image class="icon" src="https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/address-none.png" class="icon"></image>
+		<text class="text">您还没有收货地址，请点击下方+新建</text>
+	</view>
+	<view class="add-address" bindtap="addressAddOrUpdate" data-address-id="0">+ 新建地址</view>
+</view>

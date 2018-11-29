@@ -1,0 +1,334 @@
+page{
+    height: 100%;
+    min-height: 100%;
+    background: #f4f4f4;
+}
+.container{
+    background: #FFF;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
+}
+/* 空购车提示 */
+.no-cart{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.title-img {
+	width: 254rpx;
+	height: 254rpx;
+	margin: 60rpx auto 0;
+}
+.title-img image {
+	width: 100%;
+	height: 100%;
+}
+.title-box{
+    margin: 38rpx auto 25rpx;
+    text-align: center;
+    font-size:28rpx;
+    color:#ABABAB;
+}
+.to-index-btn{
+    color:#952934;
+    background:none;
+    border-radius:6px;
+    border:#952934 2rpx solid;
+    width:240rpx;
+    height: auto;
+    line-height: 80rpx;
+    text-align: center;
+    font-size:32rpx;
+    margin: 0 auto 50rpx;
+    display: block;
+}
+
+/* 空购物车推荐  */
+.recommend-goods-frame {
+	overflow: hidden;
+	background: #F4F4F4;
+}
+.recommend-goods-title {
+	line-height: 45rpx;
+	margin: 25rpx 0;
+	text-align: center;
+	font-size: 32rpx;
+}
+.recommend-goods-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.recommend-goods-item {
+	width: 369rpx;
+	height: 545rpx;
+	background: #FFF;
+	position: relative;
+}
+.recommend-goods-item:nth-child(odd) {
+	margin-right: 12rpx;
+}
+.recommend-goods-item:nth-child(n+3) {
+	margin-top: 12rpx;
+}
+.recommend-goods-item-text {
+	padding: 28rpx
+}
+.recommend-goods-item-img {
+	width:　369rpx;
+	height:　369rpx;
+	background: #FFF;
+}
+.recommend-goods-item-img image {
+	display: block;
+}
+.recommend-goods-item-name {
+	height: 80rpx;
+	overflow: hidden;
+}
+.recommend-goods-item-price {
+	color: #952934;
+	line-height: 40rpx;
+}
+
+.cart-view{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    
+}
+
+.cart-view .list{
+	/*
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 120rpx;
+    */
+   margin-bottom: 100rpx;
+   background: #F4F4F4;
+}
+.group-frame {
+	padding-bottom: 20rpx;
+}
+.group-frame:last-child {
+	padding-bottom: 0;
+	border-bottom: #ECECEC 1rpx solid;
+}
+.group-frame .group-title {
+	background: #FAFAFA;
+	display: flex;
+	align-items: center;
+	line-height: 88rpx;
+	height: 88rpx;
+	padding-left: 28rpx;
+}
+.group-frame .group-title-checkbox {
+	margin-right: 20rpx;
+}
+.group-frame .group-title-logo {
+	border: #ECECEC 1rpx solid;
+	background: #FFF;
+	margin-right: 20rpx;
+	border-radius: 6rpx;
+}
+.group-frame .group-title image {
+	border-radius: 6rpx;
+}
+.cart-view .group-item{
+    height: auto;
+    width: 100%;
+    background: #fff;
+}
+
+.cart-view .item {
+	display: flex;
+	align-items: center;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 1px solid #ECECEC;
+    padding: 0 28rpx 0 28rpx;
+}
+.cart-view .item:last-child {
+	border-bottom: none;
+}
+.cart-view .item .cart-checkbox {
+    width: 40rpx;
+}
+.cart-view .item .cart-checkbox image {
+    width: 40rpx;
+    height: 40rpx;
+}
+.cart-view .item .cart-img {
+	width: 157rpx;
+	height: 157rpx;
+	margin: 28rpx 20rpx;
+}
+
+.cart-view .item .cart-img image {
+	width: 157rpx;
+	height: 157rpx;
+}
+
+.cart-view .item .cart-goods{
+    flex: 1;
+}
+
+.cart-view .item .img{
+    height:157rpx;
+    width: 157rpx;
+    background: #f4f4f4;
+}
+
+.cart-view .item .name{
+    line-height: 42rpx;
+    font-size: 30rpx;
+    color: #2D2D2D;
+    overflow: hidden;
+	white-space:nowrap;
+	margin-bottom: 16rpx;
+	width: 457rpx;
+}
+
+.cart-view .item .attr{
+	height: 30rpx;
+    line-height: 30rpx;
+    font-size: 26rpx;
+    color: #7A7A7A;
+    overflow: hidden;
+}
+
+.cart-view .item .info{
+	display: flex;
+	margin: 30rpx 0 0 0;
+	justify-content: space-between;
+}
+
+.cart-view .item .price {
+	font-size: 30rpx;
+	line-height: 42rpx;
+	color: #952934;
+}
+
+.cart-view .item .selnum{
+    width: 180rpx;
+    height: 50rpx;
+    border: 1rpx solid #ccc;
+    border-radius: 5rpx;
+    display: flex;
+}
+
+.selnum .cut{
+    width: 48rpx;
+    height: 48rpx;
+    line-height: 48rpx;
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+
+.selnum .number {
+    flex: 1;
+    text-align: center;
+    height: 48rpx;
+    min-height: 48rpx;
+    line-height: 48rpx;
+}
+
+.selnum .add{
+    width: 48rpx;
+    height: 48rpx;
+    line-height: 48rpx;
+    border-left: 1px solid #ccc;
+    text-align: center;
+}
+
+/* 底部操作条 */
+.cart-bottom{
+	z-index: 10;
+    position: fixed;
+    bottom:0;
+    left:0;
+    right: 0;
+    height: 100rpx;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-bottom .checkbox {
+	flex: 1;
+	border-top: #ECECEC 1px solid;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding-left: 80rpx;
+    background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/checkbox-no.png");
+    background-size: 40rpx;
+    background-position: 28rpx center;
+	background-repeat: no-repeat;
+    font-size: 28rpx;
+    color: #7A7A7A;
+}
+
+.cart-bottom .checkbox.checked{
+    background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/checkbox-yes.png");
+}
+
+.cart-bottom .total{
+    flex: 1;
+    border-top: #ECECEC 1px solid;
+    height: 100rpx;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    padding-right: 28rpx;
+    text-align: right;
+    color: #952934;
+}
+
+.cart-bottom .checkout{
+    height: 100rpx;
+    width: 200rpx;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 28rpx;
+    background: #952934;
+    color: #fff;
+}
+
+.cart-bottom .checkout.disable {
+    background: #CCCCCC;
+}
+.cart-bottom .checkout.big {
+    width: 236rpx;
+}
+
+/* 顶部操作条 */
+.cart-view-address-frame {
+	background: #F4F4F4;
+	height: 88rpx;
+	line-height: 88rpx;
+	padding: 0 28rpx;
+	width: 750rpx;
+	display: flex;
+	justify-content: space-around;
+}
+.cart-view-address-frame .cart-view-address-info {
+	width: 494rpx;
+	padding: 0 0 0 38rpx;
+	color: #ABABAB;
+	background-image: url("https://baifen-app.oss-cn-beijing.aliyuncs.com/weixin/images/icon-cart-address-edit.png");
+	background-size: 28rpx 34rpx;
+	background-position: left center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+.cart-view-address-frame .delete {
+    color: #952934;
+    text-align: right;
+    width: 160rpx;
+}
