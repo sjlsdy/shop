@@ -22,13 +22,14 @@ Page({
 		buyType: '',
 		checkoutGoodsList: [],
 		checkoutGoodsShow: false,
+		addressModalStatus: false,
 	},
 	onLoad: function(options) {
 		wx.setNavigationBarTitle({
 			title: '订单确认',
 		})
 		// 页面初始化 options为页面跳转所带来的参数
-		if(options.isBuy != null) {
+		if (options.isBuy != null) {
 			this.data.isBuy = options.isBuy
 		}
 		this.data.buyType = this.data.isBuy ? 'buy' : 'cart'
@@ -48,22 +49,22 @@ Page({
 		let addList = [];
 		let addId = '';
 		util.request(api.AddressList).then(function(res) {
-			if(res.errno === 0) {
+			if (res.errno === 0) {
 				addList = res.data;
 				res.data.map(res => {
 					console.log(res)
-					if(res.is_default == 1) {
+					if (res.is_default == 1) {
 						addId = res.id;
 					}
 				})
 				return true;
 			}
 		}).then(function(data) {
-			if(addList.length > 0) {
+			if (addList.length > 0) {
 				wx.getStorage({
 					key: 'addressId',
 					success(res) {
-						if(res) {
+						if (res) {
 							// 用户有地址&&点存过
 							_self.setData({
 								'addressId': res.data
@@ -72,16 +73,16 @@ Page({
 						}
 					},
 					fail() {
-						if(addId == '') {
+						if (addId == '') {
 							// 用户有地址&&没有点存过&&也没有默认地址
 							wx.showToast({
 								title: '请先选择收货地址',
 								icon: 'none',
 								duration: 1000
 							});
-							setTimeout((res)=>{
+							setTimeout((res) => {
 								_self.selectAddress();
-							},1000)
+							}, 1000)
 						} else {
 							// 用户有地址&&没有点选过&&有默认地址
 							_self.setData({
@@ -98,9 +99,9 @@ Page({
 					icon: 'none',
 					duration: 1000
 				});
-				setTimeout((res)=>{
+				setTimeout((res) => {
 					_self.addAddress();
-				},1000)
+				}, 1000)
 			}
 		});
 	},
@@ -123,7 +124,7 @@ Page({
 			couponId: that.data.couponId,
 			type: buyType
 		}, 'POST', 'application/x-www-form-urlencoded').then(function(res) {
-			if(res.errno === 0) {
+			if (res.errno === 0) {
 				that.setData({
 					checkedGoodsList: res.data.checkedGoodsList,
 					checkedAddress: res.data.checkedAddress,
@@ -162,10 +163,22 @@ Page({
 		});
 	},
 	selectAddress() {
+		let _self = this;
+		_self.setData({
+			addressModalStatus: true
+		});
+		/*
 		wx.navigateTo({
 			url: '/pages/shopping/address/address',
-			//url: '/pages/ucenter/address/address',
 		})
+		*/
+	},
+	closeAddressModal() {
+		let _self = this;
+		console.log("============================================================")
+		_self.setData({
+			addressModalStatus: false
+		});
 	},
 	addAddress() {
 		wx.navigateTo({
@@ -174,7 +187,7 @@ Page({
 	},
 	// 点击去支付
 	submitOrder: function() {
-		if(this.data.addressId <= 0) {
+		if (this.data.addressId <= 0) {
 			util.showErrorToast('请选择收货地址');
 			return false;
 		}
@@ -183,7 +196,7 @@ Page({
 			couponId: this.data.couponId,
 			type: this.data.buyType
 		}, 'POST', 'application/json').then(res => {
-			if(res.errno === 0) {
+			if (res.errno === 0) {
 				const orderId = res.data.orderInfo.id;
 				pay.payOrder(parseInt(orderId)).then(res => {
 					wx.redirectTo({

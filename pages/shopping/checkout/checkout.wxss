@@ -63,14 +63,14 @@ page {
 }
 
 .address-item .address-more {
-	width: 13rpx;
-	height: 26rpx;
+	width: 30rpx;
+	height: 30rpx;
 	flex-shrink: 0;
 }
 
 .address-item .address-more image {
-	width: 13rpx;
-	height: 26rpx;
+	width: 100%;
+	height: 100%;
 }
 
 .order-box {

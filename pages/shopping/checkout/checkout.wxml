@@ -1,3 +1,4 @@
+<checkAddress bind:closeAddressModal="closeAddressModal" wx:if="{{addressModalStatus}}"></checkAddress>
 <view class="checkout-goods-mask" wx:if="{{checkoutGoodsShow}}" bindtap="hideCheckoutGoods"></view>
 <view class="checkout-goods-frame" wx:if="{{checkoutGoodsShow}}">
 	<view class="checkout-goods-title-frame">
@@ -43,7 +44,7 @@
 				<text class="address">{{checkedAddress.full_region+checkedAddress.detailInfo}}</text>
 			</view>
 			<view class="address-more">
-				<image src="/static/b6images/WX-shopimg2.png"></image>
+				<image src="/static/images/icon-arr-right.png"></image>
 			</view>
 		</view>
 		<view class="address-item address-empty" bindtap="addAddress" wx:if="{{checkedAddress.id <= 0}}">

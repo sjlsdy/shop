@@ -1,0 +1,11 @@
+<view class="mask-bg" bindtap="hideModal"></view>
+<view class="logistics-frame">
+	<view class="logistics-title">
+		<view class="t">退款金额</view>
+		<view class="d">￥{{orderInfo.actual_price}}</view>
+	</view>
+	<textarea bindinput="bindinput" placeholder="请填写退货原因"  name="textarea"  maxlength="-1" class="logistics-scroll" />
+	<view class="logistics-btn" bindtap="submit">
+		提交
+	</view>
+</view>

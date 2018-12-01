@@ -1,0 +1,16 @@
+<view class="recommend-goods-frame">
+	<view class="recommend-goods-title">- {{productTitle}} -</view>
+	<view class="recommend-goods-box">
+		<block wx:for-index="index" wx:for="{{floorGoods}}" wx:for-item="item" wx:key="id">
+			<navigator url="/pages/goods/goods?id={{item.id}}" class="recommend-goods-item">
+				<view class="recommend-goods-item-img">
+					<image src="{{item.imgUrl}}" mode="scaleToFill" style="width: 369rpx; height: 369rpx;" />
+				</view>
+				<view class="recommend-goods-item-text">
+					<view class="recommend-goods-item-name">{{item.name}}</view>
+					<view class="recommend-goods-item-price">￥{{item.retailPrice}}</view>
+				</view>
+			</navigator>
+		</block>
+	</view>
+</view>

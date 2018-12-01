@@ -198,6 +198,12 @@ const apiList = {
 			'orderTotalPrice': '',
 		}
 	},
+	// 获取物流信息
+	'api__express__get_express_info': {
+		'errno': 0,
+		'errmsg': 'success',
+		'data': ''
+	}
 }
 
 function apiRes(str) {

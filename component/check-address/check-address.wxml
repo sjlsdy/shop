@@ -1,0 +1,19 @@
+<view class="mask-bg" bindtap="hideModal"></view>
+<view class="logistics-frame">
+	<view class="logistics-title">
+		<view class="t">请选择地址</view>
+	</view>
+	<scroll-view scroll-y class="logistics-scroll">
+		<view class="logistics-box">
+			<view class="logistics-item" wx:for="{{addressData}}" wx:key="item">
+				<view class="logistics-time">{{item.userName}}</view>
+				<view class="logistics-content">{{item.telNumber}}</view>
+				<view class="logistics-time">{{item.full_region}}</view>
+				<view class="logistics-content">{{item.detailInfo}}</view>
+			</view>
+		</view>
+	</scroll-view>
+	<view class="logistics-btn" bindtap="hideModal">
+		关闭
+	</view>
+</view>

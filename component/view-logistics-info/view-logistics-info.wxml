@@ -1,0 +1,18 @@
+<view class="mask-bg" bindtap="hideModal"></view>
+<view class="logistics-frame">
+	<view class="logistics-title">
+		<view class="t">{{shippingName}}</view>
+		<view class="d">{{shippingNo}}</view>
+	</view>
+	<scroll-view scroll-y class="logistics-scroll">
+		<view class="logistics-box">
+			<view class="logistics-item" wx:for="{{logisticsData}}" wx:key="item">
+				<view class="logistics-time">{{item.AcceptTime}}</view>
+				<view class="logistics-content">{{item.AcceptStation}}</view>
+			</view>
+		</view>
+	</scroll-view>
+	<view class="logistics-btn" bindtap="hideModal">
+		确定
+	</view>
+</view>

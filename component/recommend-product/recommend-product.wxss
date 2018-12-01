@@ -1,0 +1,46 @@
+/* 空购物车推荐  */
+.recommend-goods-frame {
+	overflow: hidden;
+	background: #F4F4F4;
+}
+.recommend-goods-title {
+	line-height: 45rpx;
+	margin: 25rpx 0;
+	text-align: center;
+	font-size: 32rpx;
+}
+.recommend-goods-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.recommend-goods-item {
+	width: 369rpx;
+	height: 545rpx;
+	background: #FFF;
+	position: relative;
+}
+.recommend-goods-item:nth-child(odd) {
+	margin-right: 12rpx;
+}
+.recommend-goods-item:nth-child(n+3) {
+	margin-top: 12rpx;
+}
+.recommend-goods-item-text {
+	padding: 28rpx
+}
+.recommend-goods-item-img {
+	width:　369rpx;
+	height:　369rpx;
+	background: #FFF;
+}
+.recommend-goods-item-img image {
+	display: block;
+}
+.recommend-goods-item-name {
+	height: 80rpx;
+	overflow: hidden;
+}
+.recommend-goods-item-price {
+	color: #952934;
+	line-height: 40rpx;
+}
