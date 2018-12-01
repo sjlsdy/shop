@@ -51,6 +51,7 @@ Page({
 			if(res.errno === 0) {
 				addList = res.data;
 				res.data.map(res => {
+					console.log(res)
 					if(res.is_default == 1) {
 						addId = res.id;
 					}

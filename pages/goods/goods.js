@@ -30,6 +30,12 @@ Page({
 			marketprice: 0,
 		},
 		inStock: 0,
+		// 商品信息
+		spuInfo: '',
+		// 点选规格后的售卖商品信息
+		sku: {
+
+		}
 	},
 	getGoodsInfo: function() {
 		let that = this;
@@ -243,7 +249,7 @@ Page({
 		//console.log(this.data.goods)
 		return {
 			title: '我在百分之六发现一个不错商品，点开看看',
-			path: '/pages/goods/goods?id='+ this.data.id +'&shareuserid=' + wx.getStorageSync('userId'),
+			path: '/pages/goods/goods?id=' + this.data.id + '&shareuserid=' + wx.getStorageSync('userId'),
 			imageUrl: this.data.gallery[0]['img_url'],
 			// path: `pages/index/index`, //点击分享的图片进到哪一个页面
 			desc: this.data.goods.name,
@@ -626,9 +632,10 @@ Page({
 			}
 		}
 		specificationList.map(function(item) {});
-	},nowVip(){
-        wx.navigateTo({
-            url: '/pages/member/joinMember'
-        })
+	},
+	nowVip() {
+		wx.navigateTo({
+			url: '/pages/member/joinMember'
+		})
 	}
 })
