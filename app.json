@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/goods/goods",
     "pages/index/index",
     "pages/catalog/catalog",
     "pages/newGoods/newGoods",
@@ -32,7 +33,6 @@
     "pages/shopping/checkout/checkout",
     "pages/shopping/address/address",
     "pages/shopping/addressAdd/addressAdd",
-    "pages/goods/goods",
     "pages/topicDetail/topicDetail",
     "pages/auth/mobile/mobile",
     "pages/shopping/selCoupon/selCoupon",
@@ -54,26 +54,26 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "iconPath": "static/b6images/WX-icon-home.png",
-        "selectedIconPath": "static/b6images/WX-icon-home-activity.png",
+        "iconPath": "static/images/icon-home.png",
+        "selectedIconPath": "static/images/icon-home-activity.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/topic/topic",
-        "iconPath": "static/b6images/WX-icon-member.png",
-        "selectedIconPath": "static/b6images/WX-icon-member-activity.png",
-        "text": "会员"
+        "iconPath": "static/images/icon-classify.png",
+        "selectedIconPath": "static/images/icon-classify-activity.png",
+        "text": "分类"
       },
       {
         "pagePath": "pages/cart/cart",
-        "iconPath": "static/b6images/WX-icon-car.png",
-        "selectedIconPath": "static/b6images/WX-icon-car-activity.png",
+        "iconPath": "static/images/icon-cart.png",
+        "selectedIconPath": "static/images/icon-cart-activity.png",
         "text": "购物车"
       },
       {
         "pagePath": "pages/ucenter/index/index",
-        "iconPath": "static/b6images/WX-icon-me.png",
-        "selectedIconPath": "static/b6images/WX-icon-me-activity.png",
+        "iconPath": "static/images/icon-me.png",
+        "selectedIconPath": "static/images/icon-me-activity.png",
         "text": "我的"
       }
     ]

@@ -1,9 +1,7 @@
 const root = '/api/';
 
-// const API_BASE_URL = 'http://fly2you.cn' + root;
-const API_BASE_URL = 'https://wx.dongfanghongma.com' + root;
-//const API_BASE_URL = 'http://192.168.1.231:8080' + root;
-//const API_BASE_URL = 'http://192.168.1.215:8082' + root;
+const API_BASE_URL = 'http://www.shop.com' + root;
+
 module.exports = {
     IndexUrlNewGoods: API_BASE_URL + 'index/newGoods', //新品首发
     IndexUrlHotGoods: API_BASE_URL + 'index/hotGoods', //热卖商品
@@ -35,7 +33,7 @@ module.exports = {
     CartUpdate: API_BASE_URL + 'cart/update', // 更新购物车的商品
     CartDelete: API_BASE_URL + 'cart/delete', // 删除购物车的商品
     CartChecked: API_BASE_URL + 'cart/checked', // 选择或取消选择商品
-    CartGoodsCount: API_BASE_URL + 'cart/goodscount', // 获取购物车商品件数
+    
     CartCheckout: API_BASE_URL + 'cart/checkout', // 下单前信息确认
 
     OrderSubmit: API_BASE_URL + 'order/submit', // 提交订单
@@ -83,6 +81,7 @@ module.exports = {
     OrderQuery: API_BASE_URL + 'pay/query',//微信查询订单状态
 
     // b6
+    CartGoodsCount: API_BASE_URL + 'cart/goodscount', // 获取购物车商品件数
     TodayGoodsList: API_BASE_URL + 'front/get_goods_list',// 首页今日推荐
     TradeCategory: API_BASE_URL + 'trade/category',// 首页商品分类
     TradeList: API_BASE_URL + 'trade/list',// 首页底部商品

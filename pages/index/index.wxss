@@ -518,8 +518,8 @@
 	position: absolute;
 	left: 258rpx;
 	top: -30rpx;
-	width: 59rpx;
-	height: 63rpx;
+	width: 60rpx;
+	height: 60rpx;
 }
 .goodtype-icon-forb6 image {
 	width: 100%;
